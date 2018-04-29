@@ -1,0 +1,125 @@
+//themes
+$bg: #636363;
+$header: #534c4d;
+$borders: #e1e1e1;
+$headerPad: 5px;
+$red: #711000;
+
+
+body {
+  background: $bg;
+
+}
+
+//nav styles
+
+header {
+  position: fixed;
+  width: 100%;
+  background: $header;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  border-bottom: solid 2px $borders;
+  //padding-top: $headerPad;
+  //padding-bottom: $headerPad;
+}
+
+
+#icon-holder {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  grid-column-gap: 20px;
+}
+
+.ic {
+  height: 35px;
+  background: $red;
+  margin: auto;
+  padding: 5px 8px 5px 8px;
+  -webkit-transition: background-color 200ms;
+  -moz-transition: background-color 200ms;
+  -ms-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
+  transition: background-color 200ms;
+}
+
+.ic:hover {
+  background-color: lighten($red, 20%);
+}
+
+//content styles
+
+//scrollbar styles
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(99, 99, 99, 0.78);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(182, 182, 182);
+}
+
+//shadows
+
+.mdl-shadow--2dp {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+
+.mdl-shadow--3dp {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12)
+}
+
+.mdl-shadow--4dp {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+}
+
+.mdl-shadow--6dp {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+}
+
+.mdl-shadow--8dp {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}
+
+.mdl-shadow--16dp {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
+}
+
+.mdl-shadow--24dp {
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, .14), 0 11px 15px -7px rgba(0, 0, 0, .12), 0 24px 38px 3px rgba(0, 0, 0, .2)
+}
+
+/*viewport media queries*/
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

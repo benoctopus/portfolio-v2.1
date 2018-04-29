@@ -1,0 +1,42 @@
+-
+  var mobIcons = [
+  {
+  src: 'assets/images/icons/if_Account_2202250.svg',
+  id: 'nav-about',
+  'data-target': 'about'
+  },
+  {
+  src: 'assets/images/icons/if_Chat_bubble_2202260.svg',
+  id: 'nav-contact',
+  'data-target': 'contact'
+  },
+  {
+  src: 'assets/images/icons/if_Folder_2202274.svg',
+  id: 'nav-portfolio',
+  'data-target': 'portfolio'
+  }
+  ];
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  link(rel='stylesheet' type='text/css' href='assets/css/reset.css')
+  link(rel='stylesheet', href='assets/css/material.min.css')
+  link(rel='stylesheet' type='text/css' href='assets/css/style.css')
+  script(src='assets/javascript/material.min.js')
+  link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+
+  title Benjamin Rose
+
+body
+
+  header
+      #icon-holder
+        each attr in mobIcons
+          .ic.mdl-shadow--2dp
+            img(alt='icon' style="height: inherit")&attributes(attr)
+
+  .wrapper
+    section
